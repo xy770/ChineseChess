@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/B_Advisor.gif</file>
+        <file>Images/B_Cannon.gif</file>
+        <file>Images/B_Chariot.gif</file>
+        <file>Images/B_Elephant.gif</file>
+        <file>Images/B_General.gif</file>
+        <file>Images/B_Horse.gif</file>
+        <file>Images/B_Soldier.gif</file>
+        <file>Images/R_Advisor.gif</file>
+        <file>Images/R_Cannon.gif</file>
+        <file>Images/R_Chariot.gif</file>
+        <file>Images/R_Elephant.gif</file>
+        <file>Images/R_General.gif</file>
+        <file>Images/R_Horse.gif</file>
+        <file>Images/R_Soldier.gif</file>
+    </qresource>
+</RCC>
