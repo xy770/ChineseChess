@@ -3,11 +3,10 @@
 
 #include <QPushButton>
 
-class Chess
+class Chess : public QWidget
 {
 public:
-    Chess(QWidget* winParent);
-    Chess(){};
+    explicit Chess(QWidget *parent = nullptr);
     ~Chess();
 
     enum class ChessType{

@@ -1,12 +1,9 @@
 #include "chess.h"
 
-Chess::Chess(QWidget* winParent)
+Chess::Chess(QWidget *parent)
+    : QWidget(parent)
 {
-    m_chessBtn->setParent(winParent);
-    m_chessBtn->setFixedSize(50, 50);
-    m_chessBtn->setIcon(QIcon("://Images/B_Horse.gif"));
-    m_chessBtn->setIconSize(m_chessBtn->size());
-    m_chessBtn->setStyleSheet("background-color: transparent; border:none;");
+    setChessBtnParent(this);
 }
 
 Chess::~Chess(){

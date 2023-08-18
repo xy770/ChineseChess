@@ -10,7 +10,7 @@ ChessWindow::ChessWindow(QWidget *parent) :
 
     chs.setChessBtnParent(centralWidget());
     chs.setChessColor(Chess::ChessColor::Black);
-    chs.setChessType(Chess::ChessType::Chariot);
+    chs.setChessType(Chess::ChessType::General);
     chs.RenderChessBtn();
 }
 

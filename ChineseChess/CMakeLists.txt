@@ -26,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Resources/Resources.qrc
         src/widgets/chesswindow.cpp src/widgets/chesswindow.h src/widgets/chesswindow.ui src/widgets/ui_chesswindow.h
         src/chess/chess.h src/chess/chess.cpp
+        src/chess/chessboard.h src/chess/chessboard.cpp
 
 
 
