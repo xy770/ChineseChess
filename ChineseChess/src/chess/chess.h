@@ -35,6 +35,11 @@ public:
     void setChessBtnParent(QWidget* winParent);
 
     void RenderChessBtn() const;
+
+    QPushButton& GetBtn()
+    {
+        return *m_chessBtn;
+    }
 private:
     void setChessBtnIcon() const;
     ChessType m_chessType{ChessType::UnKnown};

@@ -3,8 +3,12 @@
 
 #include <QMainWindow>
 #include <QPushButton>
-#include "../chess/chess.h"
+#include <QGridLayout>
+
 #include "ui_chesswindow.h"
+
+#include "../chess/chess.h"
+#include "../chess/chessboard.h"
 
 #include <string>
 
@@ -32,6 +36,7 @@ private:
 
     const WindowInfo windowInfo{"Chess",QIcon("://Images/R_General.gif")};
     Chess chs;
+    ChessBoard bd;
 };
 
 #endif // CHESSWINDOW_H

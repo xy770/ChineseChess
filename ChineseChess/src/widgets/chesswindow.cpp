@@ -9,9 +9,12 @@ ChessWindow::ChessWindow(QWidget *parent) :
     SetupWindow();
 
     chs.setChessBtnParent(centralWidget());
-    chs.setChessColor(Chess::ChessColor::Black);
+    chs.setChessColor(Chess::ChessColor::Red);
     chs.setChessType(Chess::ChessType::General);
     chs.RenderChessBtn();
+
+    bd.setChessBoardParent(centralWidget());
+    bd.test();
 }
 
 ChessWindow::~ChessWindow()

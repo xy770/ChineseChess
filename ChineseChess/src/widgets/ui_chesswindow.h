@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QWidget>
 
@@ -20,6 +21,8 @@ class Ui_ChessWindow
 {
 public:
     QWidget *centralwidget;
+    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout;
 
     void setupUi(QMainWindow *ChessWindow)
     {
@@ -28,6 +31,12 @@ public:
         ChessWindow->resize(800, 600);
         centralwidget = new QWidget(ChessWindow);
         centralwidget->setObjectName("centralwidget");
+        gridLayoutWidget = new QWidget(centralwidget);
+        gridLayoutWidget->setObjectName("gridLayoutWidget");
+        gridLayoutWidget->setGeometry(QRect(170, 130, 160, 80));
+        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout->setObjectName("gridLayout");
+        gridLayout->setContentsMargins(0, 0, 0, 0);
         ChessWindow->setCentralWidget(centralwidget);
 
         retranslateUi(ChessWindow);
