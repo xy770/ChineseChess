@@ -3,11 +3,15 @@
 
 #include <QGridLayout>
 #include <QPushButton>
+<<<<<<< HEAD
 #include <QLabel>
 #include <QPixmap>
 
 #include <vector>
 
+=======
+
+>>>>>>> 907f6081b29ab9bae857b86e2501683b97dde226
 class ChessBoard
 {
 public:
@@ -15,6 +19,7 @@ public:
     ~ChessBoard();
 
     void setChessBoardParent(QWidget* winParent);
+<<<<<<< HEAD
     void ShowChessBoard();
     void ShowChessBoard(QWidget* winParent);
 
@@ -22,6 +27,13 @@ public:
     {
         board.show(m_winParent);
 
+=======
+
+    void test()
+    {
+        m_chessBoard = new QWidget(m_winParent);
+        m_chessGridLayout = new QGridLayout(m_winParent);
+>>>>>>> 907f6081b29ab9bae857b86e2501683b97dde226
         QPushButton* btn1 = {new QPushButton("1")};
         m_chessGridLayout->addWidget(btn1,0,0);
         QPushButton* btn2 = {new QPushButton("2")};
@@ -34,6 +46,7 @@ private:
     QGridLayout* m_chessGridLayout{new QGridLayout};
     QWidget* m_chessBoard{nullptr};
     QWidget* m_winParent{nullptr};
+<<<<<<< HEAD
 
     struct Board
     {
@@ -63,6 +76,8 @@ private:
     };
 
     Board board;
+=======
+>>>>>>> 907f6081b29ab9bae857b86e2501683b97dde226
 };
 
 #endif // CHESSBOARD_H
