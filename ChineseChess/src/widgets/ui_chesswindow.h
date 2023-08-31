@@ -28,6 +28,11 @@ public:
         ChessWindow->resize(800, 600);
         centralwidget = new QWidget(ChessWindow);
         centralwidget->setObjectName("centralwidget");
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
+        centralwidget->setSizePolicy(sizePolicy);
         ChessWindow->setCentralWidget(centralwidget);
 
         retranslateUi(ChessWindow);

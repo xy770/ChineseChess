@@ -14,5 +14,6 @@
         <file>Images/R_General.gif</file>
         <file>Images/R_Horse.gif</file>
         <file>Images/R_Soldier.gif</file>
+        <file>Images/ChessBoard.gif</file>
     </qresource>
 </RCC>
